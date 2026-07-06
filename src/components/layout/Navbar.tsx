@@ -76,7 +76,7 @@ export function Navbar() {
           <div className="hidden items-center gap-2 lg:flex">
             <ThemeToggle />
             <Button variant="ghost" size="sm" asChild>
-              <Link to={routes.contact}>Sign in</Link>
+              <Link to={routes.signIn}>Sign in</Link>
             </Button>
             <Button size="sm" asChild>
               <Link to={routes.contact}>Get Started</Link>
@@ -130,7 +130,7 @@ export function Navbar() {
             </div>
             <div className="mt-4 flex flex-col gap-2 border-t border-border pt-4">
               <Button variant="outline" asChild>
-                <Link to={routes.contact} onClick={() => setMobileOpen(false)}>
+                <Link to={routes.signIn} onClick={() => setMobileOpen(false)}>
                   Sign in
                 </Link>
               </Button>
